@@ -1,0 +1,219 @@
+/* General styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #00aaff;
+    color: #222;
+}
+
+
+/* Header */
+
+header {
+    background-color: #121d35;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 35px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* Navigation */
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: rgb(206, 188, 188);
+    text-decoration: none;
+    margin: 10px;
+    padding: 8px;
+}
+
+nav a:hover {
+    background-color: #ff9d00;
+    border-radius: 5px;
+}
+
+
+/* Sections */
+
+section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: #14213d;
+    text-align: center;
+}
+
+.hero {
+    text-align: center;
+    background-color: #eaf2ff;
+}
+
+.hero h2 {
+    font-size: 30px;
+}
+
+.hero img {
+    width: 80%;
+    max-width: 700px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+
+/* Events */
+
+.event-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.event-card {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #079ebc;
+}
+
+.event-card:hover {
+    transform: scale(1.03);
+}
+
+.event-card h3 {
+    color: #0d03d3;
+}
+
+
+/* Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #13203b;
+    color: white;
+}
+
+
+/* Aside */
+
+aside {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff3cd;
+    border-left: 5px solid #f69a05;
+}
+
+aside h2 {
+    color: #856404;
+}
+
+
+/* Form */
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    background-color: #14213d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #fca311;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #14213d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px;
+    }
+
+    .event-container {
+        flex-direction: column;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    section {
+        width: 95%;
+    }
+
+}
